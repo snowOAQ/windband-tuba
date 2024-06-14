@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管樂介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <a href="https://snowoaq.github.io/windband-sky/" class="logo-container">
+            <img src="logo.png" alt="管樂世界 Logo">
+            <span class="logo-text">管樂天地</span>
+        </a>
+        <h1>管樂介紹</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">銅管</a>
+                  <div class="dropdown-content">
+                    <a href="https://snowoaq.github.io/windband-tp/">小號</a>
+                    <a href="https://snowoaq.github.io/windband-tb/">長號</a>
+                    <a href="https://snowoaq.github.io/windband-horn/">法國號</a>
+                    <a href="https://snowoaq.github.io/windband-eup/">上低音號</a>
+                    <a href="https://snowoaq.github.io/windband-tuba/">低音號</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">木管</a>
+                  <div class="dropdown-content">
+                    <a href="https://snowoaq.github.io/windband-cl/">單簧管</a>
+                    <a href="https://snowoaq.github.io/windband-oboe/">雙簧管</a>
+                    <a href="https://snowoaq.github.io/windband-flute/">長笛</a>
+                    <a href="https://snowoaq.github.io/windband-sax/">薩克斯風</a>
+                  </div>
+                </li>
+                <li><a href="https://snowoaq.github.io/windband-per/">打擊</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tuba">
+            <h2>低音號</h2>
+            <p>長低音號是一種大型銅管樂器，以其深沉、豐富的音色著稱。</p>
+            <p> 它是管樂隊和交響樂團中不可或缺的低音支柱，通常位於最低音域，提供和聲基礎和深厚的音響。</p>
+            <p>低音號的設計類似於上低音號，但體積更大，音域更低，通常具有四到五個活塞，通過調整嘴唇和按下活塞來改變音高。</p>
+            <p> 其圓潤而強勁的音色使其在各類音樂風格中都能展現獨特的魅力，無論是協奏曲還是獨奏曲。</p>
+        </section>
+        <section id="gallery">
+            <h2>圖片集</h2>
+            <div class="carousel">
+                <div><img src="tuba1.jpg" alt="低音號1"></div>
+                <div><img src="tuba2.jpg" alt="低音號2"></div>
+                <div><img src="tuba3.jpg"eup alt="低音號3"></div>
+            </div>
+        </section>
+        <section id="videos">
+            <h2>視頻</h2>
+            <div class="video-carousel">
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/2x1mncrGJxk" title="when the tuba FINALLY gets a solo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/fYOsNp4O7AU" title="Czardas - tuba solo full version (baadsvik)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- 添加更多視頻 -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>本網站僅供靜宜大學動態網頁設計課程，繳交作業用，不為其他商業用途 © 2024 管樂介紹</p>
+        <div class="footer-links">
+            <a href="https://snowoaq.github.io/windband-sky/">返回首頁</a>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+            $('.video-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>
+
